@@ -4,6 +4,8 @@ import {Routes,RouterModule} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LogoComponent } from './logo/logo.component';
+import { ContactComponent } from './contact/contact.component';
+import { GithubSearchComponent } from './github-search/github-search.component';
 const routes: Routes = [
   {
     path: 'home', component: HomeComponent
@@ -13,6 +15,12 @@ const routes: Routes = [
   },
   {
     path: 'logo', component: LogoComponent
+  },
+  {
+    path: 'contact', component: ContactComponent
+  },
+  {
+    path: 'github-search', component: GithubSearchComponent
   }
 ]
 

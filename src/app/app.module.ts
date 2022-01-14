@@ -8,6 +8,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { LogoComponent } from './logo/logo.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { GithubSearchComponent } from './github-search/github-search.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutUsComponent,
     LogoComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    GithubSearchComponent
   ],
   imports: [
     BrowserModule,
