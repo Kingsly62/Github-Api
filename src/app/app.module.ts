@@ -14,6 +14,7 @@ import { ProfileService } from './profile-service/profile.service';
 import { CustomStyleDirective } from './custom-style.directive';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { MemberComponent } from './member/member.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     NotFoundComponent,
     CustomStyleDirective,
     SignUpComponent,
-    SignInComponent
+    SignInComponent,
+    MemberComponent
   ],
   imports: [
     BrowserModule,
