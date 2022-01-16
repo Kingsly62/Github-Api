@@ -11,4 +11,5 @@ export class AppComponent {
   about = "About Us";
   git = "Git Community";
   contact = "Contact Us"
+  member = "Member"
 }

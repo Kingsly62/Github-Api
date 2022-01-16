@@ -7,6 +7,9 @@ import { LogoComponent } from './logo/logo.component';
 import { ContactComponent } from './contact/contact.component';
 import { GithubSearchComponent } from './github-search/github-search.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { MemberComponent } from './member/member.component';
 
 const routes: Routes = [
   {
@@ -23,6 +26,9 @@ const routes: Routes = [
   },
   {
     path: 'github-search', component: GithubSearchComponent
+  },
+  {
+    path: 'member', component:MemberComponent
   },
   {
     path: '**', component:NotFoundComponent
