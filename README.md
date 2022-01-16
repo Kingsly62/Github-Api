@@ -17,9 +17,10 @@ It is a site that enhances human satisfaction and grabs human attention.
 ## Technologies
 
 Purely applied
-.Html
-.Css
-.Angular(e.g Html,css,typscript and javascript)
+
+1. Html
+2. Css
+3. Angular(e.g Html,css,typscript and javascript)
 
 ## Contact
 
