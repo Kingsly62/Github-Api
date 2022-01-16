@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { GithubSearchComponent } from './github-search/github-search.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ProfileService } from './profile-service/profile.service';
+import { CustomStyleDirective } from './custom-style.directive';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
     FooterComponent,
     ContactComponent,
     GithubSearchComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CustomStyleDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
