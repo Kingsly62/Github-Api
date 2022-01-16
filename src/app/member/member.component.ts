@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./member.component.css']
 })
 export class MemberComponent implements OnInit {
-     join = "Sign-in"
-     register = "Sign-up"
+     
+     register = "Sign-Up"
   constructor() { }
 
   ngOnInit(): void {

@@ -30,11 +30,12 @@ const routes: Routes = [
   {
     path: 'member', component:MemberComponent,children:[
       {
-        path: 'sign-up',component:SignUpComponent
+        path: 'sign-up',component:SignUpComponent,children:[
+          {
+            path: 'sigin-in',component:SignInComponent
+          }
+        ]
       },
-      {
-        path: 'sign-in',component:SignInComponent
-      }
     ]
   },
   {
