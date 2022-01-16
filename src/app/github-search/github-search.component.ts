@@ -10,9 +10,10 @@ import { User } from '../user-class/user';
 })
 export class GithubSearchComponent implements OnInit {
 
-  constructor(private ProfileService:ProfileService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
    
 }
+// private ProfileService:ProfileService

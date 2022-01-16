@@ -12,6 +12,8 @@ import { GithubSearchComponent } from './github-search/github-search.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileService } from './profile-service/profile.service';
 import { CustomStyleDirective } from './custom-style.directive';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { CustomStyleDirective } from './custom-style.directive';
     ContactComponent,
     GithubSearchComponent,
     NotFoundComponent,
-    CustomStyleDirective
+    CustomStyleDirective,
+    SignUpComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
