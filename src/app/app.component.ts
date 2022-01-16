@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Github-Api';
+  home ='Home';
+  about = "About Us";
+  git = "Git Community";
+  contact = "Contact Us"
 }

@@ -1,17 +1,20 @@
 nav ul{
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 15px;
+    border: none;
     
 }
 
 nav ul li a{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 nav{
     background-color: darkslategray;
     padding: 20px;
+    margin-bottom: 0;
 }

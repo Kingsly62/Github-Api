@@ -6,6 +6,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { LogoComponent } from './logo/logo.component';
 import { ContactComponent } from './contact/contact.component';
 import { GithubSearchComponent } from './github-search/github-search.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 const routes: Routes = [
   {
     path: 'home', component: HomeComponent
@@ -21,7 +23,14 @@ const routes: Routes = [
   },
   {
     path: 'github-search', component: GithubSearchComponent
-  }
+  },
+  {
+    path: '**', component:NotFoundComponent
+  },
+  {
+     path: '', redirectTo:"/home", pathMatch:"full"},
+
+  
 ]
 
 @NgModule({

@@ -1,0 +1,27 @@
+* {box-sizing: border-box;}
+
+#git{
+    margin-left: 5%;
+    margin-bottom: 30%;
+}
+
+h2{
+    color: brown;
+}
+
+input[type=text]{
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  .git{
+      height: 73%;
+      width: 100%;
+      background-color: coral;
+  }

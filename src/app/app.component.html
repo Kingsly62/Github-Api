@@ -1,17 +1,18 @@
-<a routerLink="logo">LOGO</a>
+<!-- <a routerLink="logo">LOGO</a> -->
 <nav>
+
   <ul>
     <li>
-    <a routerLink="home">Home</a>
+    <a routerLink="home" routerLinkActive="active">{{home|uppercase}}</a>
     </li>
     <li>
-    <a routerLink="about-us">About Us</a>
+    <a routerLink="about-us">{{about|uppercase}}</a>
     </li>
     <li>
-      <a routerLink="github-search">Git Community</a>
+      <a routerLink="github-search">{{git|uppercase}}</a>
     </li>
     <li>
-      <a routerLink="contact">Contac Us</a>
+      <a routerLink="contact">{{contact|uppercase}}</a>
     </li>
   </ul>
 
