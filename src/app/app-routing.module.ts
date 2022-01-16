@@ -28,7 +28,14 @@ const routes: Routes = [
     path: 'github-search', component: GithubSearchComponent
   },
   {
-    path: 'member', component:MemberComponent
+    path: 'member', component:MemberComponent,children:[
+      {
+        path: 'sign-up',component:SignUpComponent
+      },
+      {
+        path: 'sign-in',component:SignInComponent
+      }
+    ]
   },
   {
     path: '**', component:NotFoundComponent

@@ -10,6 +10,8 @@ export class AppComponent {
   home ='Home';
   about = "About Us";
   git = "Git Community";
-  contact = "Contact Us"
-  member = "Member"
+  contact = "Contact Us";
+  member = "Member";
+  register = "Sign-Up"
+
 }
