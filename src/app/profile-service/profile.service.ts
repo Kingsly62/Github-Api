@@ -1,21 +1,51 @@
-import { Injectable,OnInit } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {environment} from '../../environments/environment'
+import { environment } from '../../environments/environment'
 import { Repository } from '../repository-class/repository';
 import { User } from '../user-class/user';
+
 @Injectable({
   providedIn: 'root'
 })
 export class ProfileService {
-    apiUrl = 'http://api.github.com/users'
-  constructor(private http:HttpClient) {}
+  user: User;
+  repository: Repository;
 
-  getUsers(){
-    return this.http.get(`${this.apiUrl}?per_page=10`)
-  }
 
   
-   ngOnInit(){
+  constructor(private http: HttpClient) {
+    this.user = new User(","),
+      this.repository = new Repository("")
+  }
+  profileRequest() {
+    interface ApiResponse {
+      user: string;
+      username: string;
+      repository: string;
+      RepositoryName: string;
+    }
+    let promise = new Promise((resolve, reject) => {
+      this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response => {
+        if (response) {
+          this.user.username = response.username
+          this.repository.RepositoryName = response.RepositoryName
+          
+          resolve(response)
+        }
+      });
+        (error:any) => {
+          this.user.username = ","
+          this.repository.RepositoryName = ","
+          reject(error);
 
-   }
+        }
+      })
+
+    return promise
+  }
+
+
+  ngOnInit() {
+
+  }
 }

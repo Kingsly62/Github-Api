@@ -1,7 +1,11 @@
 <div class="git">
   <div id="git">
    <h2>Github Search User</h2>
+   <li *ngFor="let user of users">
    <input type="text" placeholder="search username">
+   <li>{{user.username}}</li>
+   <li>{{user.repository}}</li>
+   </li>
   </div>
   <app-footer></app-footer>
 </div>

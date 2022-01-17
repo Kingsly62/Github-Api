@@ -1,6 +1,6 @@
 export class Repository {
-    constructor(Repository:string){
-        this.Repository = Repository;
+      
+    constructor(public RepositoryName:string){
+        this.RepositoryName = RepositoryName;
     }
-    Repository:string;
 }

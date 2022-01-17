@@ -6,7 +6,9 @@
 }
 
 h2{
-    color: brown;
+    color: white;
+    background-color: purple;
+    padding: 20px;
 }
 
 input[type=text]{

@@ -9,9 +9,16 @@ import { User } from '../user-class/user';
   providers:[ProfileService]
 })
 export class GithubSearchComponent implements OnInit {
-
-  constructor() { }
-
+     users:any;
+     username:string =""
+     repository:string =""
+  constructor(private UserData:ProfileService){
+    this.UserData.profileRequest().subcribe((data:any)=>{
+      console.warn("data",data);
+      this.users=data
+    })
+    }
+    
   ngOnInit(): void {
   }
    
