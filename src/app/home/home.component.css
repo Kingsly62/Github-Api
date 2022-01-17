@@ -1,7 +1,8 @@
 .home{
-    background-image: url("../../assets/WallpaperDog-10974735.png");
-    height: 80vh;
-    width: 100%;
+    /* background-image: url("../../assets/WallpaperDog-10974735.png"); */
+    padding: 80px;
+    background-color: blanchedalmond;
+    
     
 }
 
@@ -33,4 +34,42 @@ button[type=submit] {
          
   }
 
- 
+ #para{
+     bottom: 65%;
+     transform: 0, -65%;
+     position: absolute;
+     margin-left: 37%;
+     font-size: 20px;
+     
+ }
+
+ #git{
+     bottom: 50%;
+     transform: 0, -50%;
+     position: absolute;
+
+ }
+
+ #git  ul li a{
+     font-size: 20px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: cadetblue;
+     list-style: none;
+ }
+
+ #git h2{
+     color: black;
+     font-size: 20px;
+     
+ }
+
+ #image1{
+    margin-left: 65%; 
+    bottom: 35%;
+    transform: 0, -35%;
+    position: absolute;
+ }
+
+ #image1 img{
+     border-radius: 200px;
+ }
