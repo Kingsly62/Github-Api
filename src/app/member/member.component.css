@@ -6,3 +6,8 @@ button[type=submit] {
     border-radius: 18px;
     cursor: pointer;
   }
+
+  .member{
+    background-color: white;
+    height: 365px;
+  }

@@ -4,7 +4,7 @@ h2{
 }
 
 #member{
-    top: 30%;
+    top: 15%;
     transform: 0,-30%;
     position: absolute;
     margin-left: 30%;
@@ -22,7 +22,7 @@ input[type=text],[type=email],[type=password]{
   }
   
   button[type=submit] {
-    background-color: red;
+    background-color: blue;
     color: white;
     padding: 8px 30px;
     border: none;
@@ -40,8 +40,8 @@ input[type=text],[type=email],[type=password]{
     cursor: pointer;
   }
 
-  .signup{
-    background-color: blanchedalmond;
+  /* .signup{
+    background-color: blue;
     height: 590px;
     border-radius: 10px;
-  }
+  } */
