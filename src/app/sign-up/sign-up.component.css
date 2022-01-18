@@ -39,3 +39,9 @@ input[type=text],[type=email],[type=password]{
     border-radius: 18px;
     cursor: pointer;
   }
+
+  .signup{
+    background-color: blanchedalmond;
+    height: 590px;
+    border-radius: 10px;
+  }
