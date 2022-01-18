@@ -9,18 +9,23 @@ import { User } from '../user-class/user';
   providers:[ProfileService]
 })
 export class GithubSearchComponent implements OnInit {
+    //  users!:User
      users:any;
+     
      username:string =""
      repository:string =""
   constructor(private UserData:ProfileService){
-    this.UserData.profileRequest().subcribe((data:any)=>{
-      console.warn("data",data);
-      this.users=data
-    })
+      // this.UserData.profileRequest().subscribe(data=>{
+      //   console.warn("data",data);
+      //   this.users=data
+      // })
+      this.UserData.profileRequest()
+      this.username = this.UserData.user.username
     }
-    
   ngOnInit(): void {
   }
    
 }
 // private ProfileService:ProfileService
+
+

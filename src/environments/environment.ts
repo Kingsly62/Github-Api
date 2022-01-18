@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl:'https://api.github.com/users/daneden?access_token= + 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' 
+  apiUrl:'https://api.github.com/users/daneden' 
 
 };
 
@@ -17,3 +17,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+// apiUrl:'https://api.github.com/users/daneden?access_token= + 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' 

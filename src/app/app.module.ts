@@ -15,6 +15,7 @@ import { CustomStyleDirective } from './custom-style.directive';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { MemberComponent } from './member/member.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MemberComponent } from './member/member.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]

@@ -20,14 +20,14 @@ export class ProfileService {
   profileRequest() {
     interface ApiResponse {
       user: string;
-      username: string;
+      login: string;
       repository: string;
       RepositoryName: string;
     }
     let promise = new Promise((resolve, reject) => {
       this.http.get<ApiResponse>(environment.apiUrl).toPromise().then(response => {
         if (response) {
-          this.user.username = response.username
+          this.user.username = response.login
           this.repository.RepositoryName = response.RepositoryName
           
           resolve(response)
@@ -36,6 +36,7 @@ export class ProfileService {
         (error:any) => {
           this.user.username = ","
           this.repository.RepositoryName = ","
+          console.log(error)
           reject(error);
 
         }
