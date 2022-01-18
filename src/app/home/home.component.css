@@ -1,6 +1,6 @@
 .home{
     /* background-image: url("../../assets/WallpaperDog-10974735.png"); */
-    padding: 80px;
+    padding: 100px;
     background-color: blanchedalmond;
     
     
@@ -65,11 +65,17 @@ button[type=submit] {
 
  #image1{
     margin-left: 65%; 
-    bottom: 35%;
-    transform: 0, -35%;
+    bottom: 29%;
+    transform: 0, -29%;
     position: absolute;
  }
 
  #image1 img{
-     border-radius: 200px;
+     border-radius: 400px;
+ }
+
+ #image1 p{
+     margin-left: 40px;
+     color: #000;
+     font-size: 17px;
  }
