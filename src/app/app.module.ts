@@ -17,6 +17,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { MemberComponent } from './member/member.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PipePipe } from './highlight/pipe.pipe';
+import { HighlightPipe } from './pipeCustom/highlight.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PipePipe } from './highlight/pipe.pipe';
     SignUpComponent,
     SignInComponent,
     MemberComponent,
-    PipePipe
+    PipePipe,
+    HighlightPipe
   ],
   imports: [
     BrowserModule,

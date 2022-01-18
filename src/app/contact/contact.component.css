@@ -25,10 +25,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[placeholder=]{
-    color: green;
-}
-
 input[type=submit]:hover {
   background-color: goldenrod;
 }
