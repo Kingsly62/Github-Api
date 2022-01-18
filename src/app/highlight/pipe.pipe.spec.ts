@@ -6,3 +6,6 @@ describe('PipePipe', () => {
     expect(pipe).toBeTruthy();
   });
 });
+
+// ng build --prod --base-href "https://Kingsly62.github.io/Github-Api/" 
+// npx angular-cli-ghpages --dir=dist/Github-Api
