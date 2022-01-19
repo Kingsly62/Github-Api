@@ -1,17 +1,28 @@
 <div class="about">
   <div id="about">
-   <span id="para">
-     <h3>We are software Engineering Team ready to deliver our services<br>to our well deserving customers globaly<br>around the continent!!!</h3>
-   </span>
-    
-  <div class="team">
-   <img src="../../assets/team.jpg" width="40" height="500" width="700"  alt="team">
+    <span id="para">
+      <h3>
+        We are software Engineering Team ready to deliver our services<br />to
+        our well deserving customers globaly<br />around the continent!!!
+      </h3>
+    </span>
+
+    <div class="team">
+      <img
+        src="../../assets/team.jpg"
+        width="40"
+        height="500"
+        width="700"
+        alt="team"
+      />
+    </div>
+    <div class="more">
+      <button type="text" (click)="moreContent()">Read more</button>
+      <p *ngIf="showmore">
+        Hello there<br />
+        <button type="text" (click)="moreContent()">Less</button>
+      </p>
+    </div>
   </div>
-  <div class="more">
-  <button type="text" (click)="moreContent()">Read more</button>
-  <p *ngIf="showmore">Hello there<br>
-    <button type="text"  (click)="moreContent()">Less</button>
-</p>
-   </div>
 </div>
 <app-footer></app-footer>

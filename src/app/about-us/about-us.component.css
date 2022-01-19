@@ -1,11 +1,15 @@
 .about{
     height: 70vh;
     background-color: darkslategray;
+    width: 100%;
 
 }
 
 .team{
     margin-left: 50%;
+    /* position: absolute;
+    top: 30%;
+    transform: 0,-50%; */
 }
 
 #para h3{
@@ -41,7 +45,7 @@ button[type=text] {
 
    .more{
        top: 30%;
-       transform: 0 , -35%;
+       transform: 0 , -30%;
        position: absolute;
        margin-left: 10%;
    }
